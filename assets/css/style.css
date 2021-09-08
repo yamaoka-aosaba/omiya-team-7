@@ -10,22 +10,15 @@
 }
 
 html {
-  font-size: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
-  overflow-x: hidden;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: 18px;
-  line-height: 1.77778;
-  font-weight: bold;
-  text-decoration: none;
-  border: none;
-  list-style: none;
-  color: #000;
-  margin: 0;
+    font-family:"Times New Roman","ヒラギノ明朝 ProN",serif;
+    font-weight:bold;
+    background-color:#eec9ab;
+    color:#000000;
+    margin:0%;
 }
 
 img {
@@ -84,6 +77,16 @@ button {
   height: 55px;
 }
 
+h1{
+    background-color:#bb3636;
+    text-align:center;
+    margin: 0 auto;
+}
+
+h6{
+    margin:0 5px;
+}
+
 /*******************
 * Layout
 *******************/
@@ -117,16 +120,10 @@ button {
 }
 
 .container {
-  width: 1100px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1100px) {
-  .container {
-    width: calc(100% - 40px);
-  }
+   width:auto;
+   padding-right:100px;
+   padding-left:100px;
+   margin: 0 auto;
 }
 
 .row {
@@ -147,27 +144,26 @@ button {
 }
 
 .card {
-  background-color: #fff;
-  margin-bottom: 20px;
-  height: 100%;
+    background-color:#fff;
+    margin:10px;
+    width:90%;
 }
 
 .card__title {
-  font-size: 18px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 30px;
-  position: relative;
-  cursor: pointer;
+    text-align:center;
+    padding:10px;
 }
 
-.card__content {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  font-size: 16px;
-  padding: 20px 30px;
-  margin: 0;
-  position: relative;
+.card-title::after{
+    display:block;
+    content:"";
+    width:100%;
+    height:3px;
+    background-color:black;
+}
+
+.card-text{
+    text-align:center;
 }
 
 .card__content::before {
@@ -180,6 +176,35 @@ button {
   top: -10px;
   left: 30px;
 }
+
+.card2{
+    height:auto;
+    text-align:center;
+    background-color:#fff;
+    margin:10px;
+    width:90%;
+}
+
+.card2-title{
+    margin:auto;
+    padding:0 30px;
+}
+
+.card2-title::after{
+    display:block;
+    content:"";
+    width:100%;
+    height:3px;
+    background-color:rgb(255, 247, 139);
+}
+
+.card2-text{
+    text-align: justify;
+    text-justify: auto;
+    display:inline-block;
+    padding:0 30px;
+}
+
 
 .hint-page .card {
   height: auto;
@@ -295,11 +320,6 @@ button {
   background-color: #39b54a;
 }
 
-.section-title--story {
-  width: 330px;
-  margin: 0 auto 20px;
-}
-
 .section-title--border {
   position: relative;
   font-size: 30px;
@@ -365,8 +385,15 @@ button {
 * header
 *****************/
 .header {
-  background-color: #fff;
-  height: 60px;
+    position:fixed;
+    top:0;
+    left:0;
+    margin:0;
+    width:100%;
+    background-color:rgb(209, 209, 209);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .header .container {
@@ -388,8 +415,9 @@ button {
 }
 
 .header__name {
-  font-size: 20px;
-  line-height: 1.1;
+    text-align:right;
+    font-size:20px;
+    line-height:1;
 }
 
 .footer {
@@ -407,8 +435,28 @@ button {
 /********************
 * main
 ********************/
+
+.story{
+    text-align:center;
+}
+
+.story-text{
+    text-align:left;
+    display:inline-block;
+}
+
+.st-text{
+    text-align:left;
+    display:inline-block;
+}
+
 .story__note {
-  margin: 0;
+    height:120px;
+    justify-content:center;
+    width:80%;
+    background-color:#fff;
+    margin:35px auto;
+    text-align:center;
 }
 
 .story__note__outer {
@@ -421,6 +469,25 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.st1{
+    text-align:left;
+    display:inline-block;
+}
+
+.memo-title{
+    margin:5% 5% 0;
+    text-align:left;
+}
+
+.rule{
+    background-color:rgb(240, 166, 166);
+    width:auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 @media screen and (max-width: 940px) {
