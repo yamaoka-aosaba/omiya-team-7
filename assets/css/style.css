@@ -441,6 +441,28 @@ h6{
 * main
 ********************/
 
+.head-border{
+    color:#666;
+    display:flex;
+    align-items:center;
+}
+
+.head-border:before,
+.head-border:after{
+    content:"";
+    height:2px;
+    flex-grow:1;
+    background-color:#666;
+}
+
+.head-border:before{
+    margin-right: 45px;
+}
+
+.head-border:after{
+    margin-left:45px;
+}
+
 .story{
     text-align:center;
 }
