@@ -154,12 +154,12 @@ h6{
     width:90%;
 }
 
-.card__title {
+.card-title {
     text-align:center;
     padding:10px;
 }
 
-.card-title::after{
+.card-title:after{
     display:block;
     content:"";
     width:100%;
