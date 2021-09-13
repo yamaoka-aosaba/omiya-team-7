@@ -16,9 +16,10 @@ html {
 body {
     font-family:"Times New Roman","ヒラギノ明朝 ProN",serif;
     font-weight:bold;
-    background-color:#eec9ab;
+    background-color:#e6e6e6;
     color:#000000;
     margin:0%;
+    line-height:30px;
 }
 
 img {
