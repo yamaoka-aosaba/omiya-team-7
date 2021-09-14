@@ -307,7 +307,7 @@ h6{
 * title
 **********************/
 .main-title {
-  margin: 0;
+  margin:50px 0 0 0;
 }
 
 .sub-title {
@@ -413,6 +413,7 @@ h6{
 * header
 *****************/
 .header {
+    height:50px;
     background-color:#bfbfbf;
     display:flex;
     align-items:center;
