@@ -604,6 +604,7 @@ h6{
   background-color: rgb(240 166 166);
   padding: 30px 30px 60px;
   position: relative;
+  width:600px;
 }
 
 .clear-message__title {
