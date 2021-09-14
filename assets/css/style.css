@@ -226,7 +226,8 @@ h6{
 .q-title-1::after{
   display:block;
   content:"";
-  width:2px;
+  width:160px;
+  height:2px;
   background-color:#fcee21;
   margin:0 auto;
 }
