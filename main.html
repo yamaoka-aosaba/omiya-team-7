@@ -34,7 +34,7 @@
           <div class="container">
             <h2 class="q-title-1">爆弾の謎</h2>
             <p class="text-center">爆弾をよく見るとおかしな仕掛けが二箇所見つかった。<br>
-              ひとつ目のこれは・・・・・・どうやら数字を打ち込むボタンのようだ。しかし、なんと入力すればいいのだろうか？</p>
+              一つ目のこれは・・・・・・どうやら数字を打ち込むボタンのようだ。しかし、なんと入力すればいいのだろうか？</p>
   
             <div class="container">
               <figure class="image__container">
@@ -55,7 +55,6 @@ Youtube貼り付けここまで -->
 
         <!-- STAGE1解答入力セクション　ここから -->
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>数字を入力</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -81,10 +80,8 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">クリア！</div>
-              <div class="clear-message__content">爆弾からガチャリと音がした。<br>
-                しかしまだ外れない。<br>
-                どうやらもうひとつ謎が仕掛けられているようだ。</div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <div class="clear-message__content">爆弾から硬質な音がした！<br></div>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次の謎へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -99,15 +96,13 @@ Youtube貼り付けここまで -->
         v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
       ----------------------------------------------------------------------->
       <div v-if="next['stage1']" id="sectionStage2" class="stage">
-        <section>
-          <div class="section">
+        <section　class="question">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="q-title-1">爆弾の謎2</h2>
+              <p class="text-center">一つ目の謎は解くことができたようだが、まだ爆弾は外れない。<br>
+                どうやらもう一つの仕掛けを解除しなければならないらしい。<br>
+                今度は数字ではないようだが・・・・・・？</p>
             </div>
-          </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
               <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
