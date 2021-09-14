@@ -413,6 +413,9 @@ h6{
 * header
 *****************/
 .header {
+    position:fixed;
+    top:0;
+    left:0;
     height:50px;
     background-color:#bfbfbf;
     display:flex;
