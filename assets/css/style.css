@@ -234,6 +234,42 @@ h6{
 
 
 
+.col-2{
+  width:calc(50% - 20px);
+  margin:10px;
+}
+
+.card__title{
+  font-size:18px;
+  text-align:center;
+  margin:0;
+  padding:20px 30px;
+  position:relative;
+  cursor:pointer;
+}
+
+.card__content{
+  transition:all 0.3s;
+  font-size:16px;
+  paddng:20px 30px;
+  margin:0;
+  position:relative;
+}
+
+.card__content::before{
+  display:block;
+  content:"";
+  width:100%;
+  margin:0 auto;
+  height:3px;
+  background-color:#af0000;
+  position:absolute;
+  top:-10px;
+  left:30px;
+}
+
+
+
 .hint-page .card {
   height: auto;
 }
