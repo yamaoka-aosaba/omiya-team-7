@@ -211,6 +211,28 @@ h6{
 }
 
 
+.question{
+  background-color:#ffffff;
+  padding:10px 0;
+  border:2px solid #000000;
+  border-radius:20px;
+  margin:30px 10px;
+}
+
+.q-title-1,q-title-2,q-title-3,q-title-4{
+  text-align:center;
+}
+
+.q-title-1::after{
+  display:block;
+  content:"";
+  width:2px;
+  background-color:#fcee21;
+  margin:0 auto;
+}
+
+
+
 .hint-page .card {
   height: auto;
 }
