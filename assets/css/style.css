@@ -269,7 +269,7 @@ h6{
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: rgb(240, 166, 166);
 }
 
 .bg-color--subcolor {
