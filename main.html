@@ -80,7 +80,7 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">クリア！</div>
-              <div class="clear-message__content">爆弾から硬質な音がした！<br></div>
+              <div class="clear-message__content">爆弾から硬質な音がした！<br>しかし、まだ爆弾は外れないようだ。</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -99,8 +99,7 @@ Youtube貼り付けここまで -->
         <section　class="question">
             <div class="container">
               <h2 class="q-title-1">爆弾の謎2</h2>
-              <p class="text-center">一つ目の謎は解くことができたようだが、まだ爆弾は外れない。<br>
-                どうやらもう一つの仕掛けを解除しなければならないらしい。<br>
+              <p class="text-center">どうやらもう一つの仕掛けも解除しなければならないらしい。<br>
                 今度は数字ではないようだが・・・・・・？</p>
             </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -166,6 +165,7 @@ Youtube貼り付けここまで -->
             </div>
           </div>
         </section>
+        </div>
 
         <!-- STAGE2クリア画面　ここから -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
