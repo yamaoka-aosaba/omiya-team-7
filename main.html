@@ -203,6 +203,9 @@ Youtube貼り付けここまで -->
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
+            
+            <div class="answer__container"><div class="answer"><input type="text" placeholder="半角数字・全角ひらがなで入力"></div><!--v-if--><button>送信</button><!--v-if--></div>
+            
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
